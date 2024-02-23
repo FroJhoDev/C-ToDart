@@ -1,8 +1,8 @@
-let generateClassForm = document.getElementById('generateClassForm');
+let generateClassBtn = document.getElementById('generateClassBtn');
 let cleanDartInputBtn = document.getElementById('cleanDartInputBtn');
 let copyDartClassBtn = document.getElementById('copyDartClassBtn');
 
-generateClassForm.addEventListener('submit', function () {
+generateClassBtn.addEventListener('click', function () {
 
     let classNameInput = document.getElementById('classNameInput');
     let cSharpClassInput = document.getElementById('cSharpClassInput');

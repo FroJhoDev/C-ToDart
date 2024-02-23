@@ -16,21 +16,17 @@
 
         <section class="col bg-info py-3 px-4">
 
-            <form id="generateClassForm" action="#">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="classNameInput" placeholder="ClassName">
-                    <label for="classNameInput">ClassName</label>
-                </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="classNameInput" placeholder="ClassName">
+                <label for="classNameInput">ClassName</label>
+            </div>
 
-                <div class="form-floating">
-                    <textarea class="form-control" id="cSharpClassInput" required style="height: 700px;"></textarea>
-                    <label for="cSharpClassInput">Classe C#</label>
-                </div>
+            <div class="form-floating">
+                <textarea class="form-control" id="cSharpClassInput" style="height: 700px;"></textarea>
+                <label for="cSharpClassInput">Classe C#</label>
+            </div>
 
-                <input type="submit" class="btn btn-primary btn-lg mt-3 float-end" value="Gerar Classe Dart">
-            </form>
-
-
+            <button id="generateClassBtn" class="btn btn-primary btn-lg mt-3 float-end">Gerar Classe Dart</button>
 
         </section>
 
@@ -39,7 +35,7 @@
                 <textarea class="form-control" id="generatedDartClassInput" readonly style="height: 700px;"></textarea>
                 <label for="generatedDartClassInput">Classe Dart com Freezed</label>
             </div>
-
+            
             <button id="cleanDartInputBtn" class="btn btn-info btn-lg mt-3">Limpar</button>
             <button id="copyDartClassBtn" class="btn btn-primary btn-lg mt-3 float-end">Copiar código</button>
         </section>
