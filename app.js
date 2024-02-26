@@ -70,7 +70,7 @@ function generateDartClass(csharpClass, classNewName) {
     // Gerar a classe Dart
     let dartCode = `import 'package:dependencies/dependencies.dart';
 
-part '${fileName}_freezed.dart';
+part '${fileName}.freezed.dart';
 part '${fileName}.g.dart';
 
 /// {@template ${fileName}}
@@ -88,7 +88,7 @@ class ${className} with _\$${className} {
     `;
     }
 
-    dartCode += `}) = _\$${className};
+    dartCode += `}) = _${className};
     
     /// Transform json [Map] in a [${className}]
     factory ${className}.fromJson(Map<String, dynamic> json) => _\$${className}FromJson(json);
